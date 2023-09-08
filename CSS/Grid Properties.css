@@ -1,0 +1,30 @@
+.container{
+    width:600px;
+    height:300px;
+    background-color: yellow;
+    display:inline-grid; 
+    grid-template-rows:1fr 1fr 1fr 1fr ;
+    grid-template-columns: repeat(3,1fr); 
+    grid-gap:10px;
+    justify-items: center; /*start */
+    align-items:start ; /*vertical direction me cell ke upar*/
+    place-items:center; /*place every block in center*/
+}
+
+.item{
+    width: 100px;
+    height:50px;
+    background-color: greenyellow;
+    border:2px solid black;
+    text-align:center;
+}
+.one{
+    justify-self: end; /*item will be placed at end*/
+}
+.two{
+     /*
+    grid-column-start: 1;
+    grid-column-end: 3;
+    */
+    grid-row:1/span 3;
+}
